@@ -87,6 +87,101 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*---------------Header & Footer------------*/
+
+header,footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header .content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+  
+}
+
+header .content-wrapper{
+    flex-flow: column nowrap;
+}
+
+nav{
+    width: 320px;
+}
+nav a{
+    text-decoration: none;
+    color: #000000;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-content{
+    text-align: center;
+}
+
+/*---------------Mobile Style---------------*/
+
+/*hero Area*/
+
+.hero-area{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+/* Form */
+aside{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+}
+/* Feature*/
+.features{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.features .features-items{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+/* Review */
+
+.reviews{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+.mission{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact-section{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
