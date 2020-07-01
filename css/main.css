@@ -186,7 +186,7 @@ footer .copyright{
 }
 
 /* Form */
-aside{
+aside {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -366,15 +366,97 @@ aside{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+/*------Tablet-----*/
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width:768px){
+    
+    /*header tablet*/
+    
+    header .content-wrapper{
+        justify-content: space-between;
+    }
+    .header-divider{
+        width: 0;
+    }
+
+    /*form tablet*/
+    
+    .form-description, .form{
+        width: 40%;
+    }
+    aside .content-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .form{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    /* Feature tablet*/
+    
+    .features article{
+        flex-basis: 40%
+    }
+    .features .features-items{
+        justify-content: space-around;
+    }
+    .features article p{
+        padding: 0 60px;
+        text-align: center;
+    }
+    
+    /* Review tablet*/
+    
+     article div {
+        width:40%;
+    }
+    
+    /*footer tablet*/
+    
+    .contact, .social{
+        width: 40%;
+        text-align: center;
+    }
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    /*======About tablet=====*/
+    
+    .mission-content p{
+        width: 40%;
+    }
+    .mission .content-wrapper h2{
+        width:100%;
+    }
+    .mission-content{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+    
+    .contact-section .content-wrapper{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    /*======Faq tablet=====*/
+    
+    .frequent-questions div{
+        width: 40%;
+    }
+    .frequent-questions{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+    
+}   
+/*-----Desktop-----*/
+@media only screen and (min-width:1200px){
+    
 }
 
 /* ==========================================================================
