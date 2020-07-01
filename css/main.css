@@ -366,9 +366,11 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-/*------Tablet-----*/
+/*========================Tablet========================*/
 
 @media only screen and (min-width:768px){
+    
+    /*======General setting header&footer=====*/
     
     /*header tablet*/
     
@@ -378,7 +380,18 @@ aside {
     .header-divider{
         width: 0;
     }
-
+    /*footer tablet*/
+    
+    .contact, .social{
+        width: 40%;
+        text-align: center;
+    }
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    /*======Home page=====*/
+    
     /*form tablet*/
     
     .form-description, .form{
@@ -412,16 +425,6 @@ aside {
         width:40%;
     }
     
-    /*footer tablet*/
-    
-    .contact, .social{
-        width: 40%;
-        text-align: center;
-    }
-    .footer-content{
-        display: flex;
-        justify-content: space-between;
-    }
     
     /*======About tablet=====*/
     
@@ -454,8 +457,16 @@ aside {
     }
     
 }   
-/*-----Desktop-----*/
+
+/*========================Desktop========================*/
+
 @media only screen and (min-width:1200px){
+    
+    /*======Home page=====*/
+    
+    .features article{
+        flex-basis: 26%
+    }
     
 }
 
