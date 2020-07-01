@@ -122,6 +122,7 @@ h1{
 h2,
 h3{
    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
 }
 h2{
     font-size: 1.9em;
@@ -150,7 +151,31 @@ address{
     
 }
 
-
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 /*---------------Base Header & Footer Style------------*/
 
 .content-wrapper{
@@ -164,6 +189,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background: #202322;
     
 }
 header{
@@ -243,6 +269,7 @@ aside {
     justify-content: center;
     flex-flow: row wrap;
     align-items: center;
+    background: #527158;
 }
 
 /* Feature*/
@@ -293,6 +320,8 @@ aside {
     justify-content: center;
     flex-flow: row wrap;
     align-items: center;
+    background: #527158;
+    
 }
 .contact-section{
     display: flex;
@@ -312,6 +341,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+    background: #527158;
 }
 
 .faq .content-wrapper {
@@ -425,6 +455,9 @@ aside {
     /*======General setting header&footer=====*/
     
     /*header tablet*/
+    .content-wrapper{
+        width: 80%;
+    }
     
     header .content-wrapper{
         justify-content: space-between;
@@ -448,14 +481,18 @@ aside {
     
     .form-description, .form{
         width: 40%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
     }
     aside .content-wrapper{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .form{
         display: flex;
         flex-flow: column nowrap;
+        justify-content: center;
     }
     
     /* Feature tablet*/
@@ -479,7 +516,7 @@ aside {
     
     
     /*======About tablet=====*/
-    
+
     .mission-content p{
         width: 40%;
     }
@@ -496,15 +533,23 @@ aside {
         display: flex;
         justify-content: space-around;
     }
-    
+    .contact-section{
+        background: #2a423a;
+    }
     /*======Faq tablet=====*/
     
-    .frequent-questions div{
+    .faq-content{
         width: 40%;
+
     }
-    .frequent-questions{
+    .faq h2{
+        width: 100%;
+        margin-left: 50px;
+    }
+    .faq .content-wrapper{
         display: flex;
         justify-content: space-around;
+        align-items: flex-start;
         flex-flow: row wrap;
     }
     
@@ -515,12 +560,16 @@ aside {
 @media only screen and (min-width:1200px){
     
     /*======Home page=====*/
-    
+    .content-wrapper{
+        width: 80%;
+    }
     .features article{
         flex-basis: 26%
     }
-    
+    .form-description, .form{
+        width: 26%;
 }
+
 
 /* ==========================================================================
    Print styles.
