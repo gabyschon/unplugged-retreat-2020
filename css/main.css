@@ -362,6 +362,8 @@ figure{
     flex-flow: row wrap;
     align-items: center;
     background: #527158;
+    font-size: 0.875rem;
+    padding-bottom:50px;
     
 }
 .contact-section {
@@ -370,12 +372,10 @@ figure{
     flex-flow: column nowrap;
     align-items: center;
     background: #2a423a;
+    padding-bottom: 50px;
+    font-size: 0.875rem;
 }
 
-}
-.mission p{
-    font-size: 0.875em;
-}
 
 .map figure{
     position: relative;
@@ -647,27 +647,39 @@ figure{
     
     /*======About tablet=====*/
 
-    /*.mission-content p{
-        width: 40%;
+    .map figure{
+        padding-bottom: 45%;
+        margin-top: 0px;
+    }
+    .mission-content p{
+        width: 45%;
     }
     .mission .content-wrapper h2{
         width:100%;
+        font-size: 2.25rem;
     }
     .mission-content{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-flow: row wrap;
     }
         
-    .contact-section .content-wrapper{
-        display: flex;
-        justify-content: space-around;
+ .contact-section .content-wrapper h2{
+      width:100%;
+      font-size :2.25rem;
     }
-    .contact-section h2{
-        justify-content: flex-start;
-        margin : 0 64px;
+    .contact-section .content-wrapper {
+      display:flex;
+      justify-content:space-between;
+      flex-flow:row wrap;
     }
-*/
+    .contact-section .contact-info{
+      width: 47%
+    }
+    .contact-info h3{
+      font-size:1.5rem
+    }  
+
     /*======Faq tablet=====*/
     
     .faq-content{
@@ -767,6 +779,32 @@ figure{
         line-height: 18px;
     }
     
+    /*======About Desktop=====*/
+    
+    .map figure{
+        padding-bottom: 38%;
+    }
+    .mission-content {
+    justify-content: space-between;
+    }
+    .mission-content p{
+        font-size: 1.125rem;
+        line-height:24px
+    }
+    .mission .content-wrapper h2{
+        font-size:3rem;
+    }
+    .contact-section .content-wrapper h2{
+          font-size:3rem;
+          margin-bottom:0px;
+    }
+    .contact-info h3{
+          font-size : 1.875rem;
+          margin-top :10px;
+    }
+    .contact-section .contact-info{
+        font-size :1.125rem
+    }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
