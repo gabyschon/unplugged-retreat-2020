@@ -253,7 +253,11 @@ footer .social-icons p{
 footer .copyright{
     margin: 20px 0;
 }
-
+.social-icons i{
+    background: #527158;
+    padding: 10px;
+    border-radius: 100px;
+}
 /*---------------Mobile Style---------------*/
 
 
